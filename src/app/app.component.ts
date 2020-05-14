@@ -11,7 +11,10 @@ export class AppComponent {
   constructor(private toastService: ToastService){
 
     showToast(){
-      this.toastService.showToast();
+      cosnt toastType ='info',
+      const toastMessage = 'Hi this is a message';
+      const duration: 2000;
+      this.toastService.showToast(toastType, toastMessage, duration);
     }
   }
 }

@@ -11,7 +11,7 @@
     <strong>Oh snap!</strong> Change a few things up and try submitting again.
   </alert> -->
 
-<div *ngIf="toast.length > 0">
+<div *ngIf="toast.length > 0" class = "toast - container">
     <alert [dismissOnTimeout] = "toast.timeout" dismissible="true" [type]="toast.type" *ngFor="let toast of toasts">
         {{toast.message}}
     </alert> 
